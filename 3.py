@@ -19,10 +19,10 @@ cv2.putText(img, 'OpenCV TUTS', (0, 130), font, 1, (255, 100, 0), 2)
 
 while True:
     ret, frame = cap.read()
-    cv2.putText(frame, 'OpenCV TUTS', (0, 130), font, 1, (255, 100, 0), 2)
+    cv2.putText(frame, 'OpenCV TUTS', (0, 130), font,
+                1, (255, 100, 0), 3, cv2.LINE_AA)
     cv2.imshow('frame', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        print(cv2.waitKey(1) & 0xFF)
         break
 
 
